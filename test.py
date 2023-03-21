@@ -24,20 +24,20 @@ def _1():
         else:
             b -= a
     print("gcd ni ",max(a,b),"\n")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _2():
     print(questions[2-1])
     a = int(input("tegsh untsugtiin urt\n"))
     b = int(input("tegsh untsugtiin urgun\n"))
     print("tegsh untsugtiin talbai ni ",a*b,"\n")
-    time.sleep(2)
+    time.sleep(2.8)
 def _3():
     print(questions[3-1])
     a = int(input("Ehnii too ni\n"))
     b = int(input("2dahi too ni\n"))
     print("ih too ni ", a*(a>b)+b*(b>=a), "\n")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _4():
     print(questions[4-1])
@@ -46,50 +46,49 @@ def _4():
     c = int(input("3dahi too ni\n"))
     b = a*(a>b)+b*(b>=a)
     print("ih too ni ", c*(c>b)+b*(b>=c), "\n")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _5():
     print(questions[5-1])
     n = int(input("heden too oruulah we ?\n"))
-    arr = []
-    arr = [0 for i in range(n)]
     m = 0
-    for i in range (0, n, 1):
-        arr[i] = int(input(i,"dahi gishuunee oruulna uu"))
-        if m < arr[i]:
-            m = arr[i]
+    for k in range (0, n, 1):
+        print(k+1, "deh gishuunee oruulna uu")
+        x = int(input())
+        if m < x:
+            m = x
     print("hamgiin ih too ni ",m,"\n")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _6():
     print(questions[6-1])
     print("hello6")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _7():
     print(questions[7-1])
     print("hello7")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _8():
     print(questions[8-1])
     print("hello8")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _9():
     print(questions[9-1])
     print("hello9")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _10():
     print(questions[10-1])
     print("hello10")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 def _11():
     print(questions[11-1])
     print("hello11")
-    time.sleep(2)
+    time.sleep(2.8)
     print_questions()
 
 def print_questions():
@@ -128,6 +127,6 @@ def solver(t):
     else:
         print("buruu utga")
         print("0-ees 11 hurtelh too oruulna uu")
-        time.sleep(2)
+        time.sleep(2.8)
         print_questions()
 print_questions()
