@@ -57,6 +57,7 @@ def _5():
         x = int(input())
         if m < x:
             m = x
+            
     print("hamgiin ih too ni ",m,"\n")
     time.sleep(2.8)
     print_questions()
