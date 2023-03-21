@@ -1,5 +1,6 @@
 import os
 import time
+import random
 questions = [
     "1.) Euclidean algorithm",
     "2.) Tegsh untsugtiin talbai",
@@ -32,6 +33,7 @@ def _2():
     b = int(input("tegsh untsugtiin urgun\n"))
     print("tegsh untsugtiin talbai ni ",a*b,"\n")
     time.sleep(2.8)
+    print_questions()
 def _3():
     print(questions[3-1])
     a = int(input("Ehnii too ni\n"))
@@ -63,32 +65,73 @@ def _5():
     print_questions()
 def _6():
     print(questions[6-1])
-    print("hello6")
+    x= int(input("x - iig oruulna uu "))
+    n= int(input("n - iig oruulna uu "))
+    s = float(0)
+    f = int(1)
+    e = int(1)
+    for i in range (1, n+2, 1):
+        s += e/f
+        e *= x
+        f *= i
+    print("niilber ni ", s)
     time.sleep(2.8)
     print_questions()
 def _7():
     print(questions[7-1])
-    print("hello7")
+    A= int(input("A - iig oruulna uu "))
+    k= int(input("k - iig oruulna uu "))
+    s=int(1)
+    while k :
+        if k%2:
+            s*=A
+            A*=A
+            k=int(k/2)
+        else:
+            A*=A
+            k = int(k/2)
+    print(s)
     time.sleep(2.8)
     print_questions()
 def _8():
     print(questions[8-1])
-    print("hello8")
+    if int(input("toogoo oruulna uu\n"))%3:
+        print("Huwaagdahgui")
+    else:
+        print("Huwaagdana")
     time.sleep(2.8)
     print_questions()
 def _9():
     print(questions[9-1])
-    print("hello9")
+    s=0
+    for i in range (1,101,1):
+        s += i
+    print("100 hurtelh toonii niilber ni ", s)
     time.sleep(2.8)
     print_questions()
 def _10():
     print(questions[10-1])
-    print("hello10")
+    s=0
+    n=int(input("n toogoo oruulna uu\n"))
+    for i in range (1,n,1):
+        s += i
+    print("n hurtelh toonii niilber ni ", s)
     time.sleep(2.8)
     print_questions()
 def _11():
     print(questions[11-1])
-    print("hello11")
+    n = int(input("massive iin urtiig ugnu uu"))
+    arr = [0]*n
+    mx = arr[0]
+    print("massive ni")
+    print("___________")
+    for i in range(0,n,1):
+        arr[i] = random.randint(0,100)
+        if mx < arr[i]:
+            mx = arr[i]
+        print(i, "  |  ",arr[i])
+        print("___________")
+    print("Hamgiin ih utga ni ",mx)
     time.sleep(2.8)
     print_questions()
 
