@@ -120,7 +120,7 @@ def _10():
     print_questions()
 def _11():
     print(questions[11-1])
-    n = int(input("massive iin urtiig ugnu uu"))
+    n = int(input("massive iin urtiig ugnu uu\n"))
     arr = [0]*n
     mx = arr[0]
     print("massive ni")
@@ -143,7 +143,7 @@ def print_questions():
 def xit():
     print("Duuslaa")
 def solver(t):
-    os.system('clear')
+    os.system('cls')
     if t == "0":
         xit()
     elif t=="1":
